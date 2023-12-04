@@ -9,6 +9,15 @@ body {
   color: #434455;
   font-family: Roboto, sans-serif;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
 /* logo
  */
 .logo {
@@ -84,6 +93,8 @@ ul {
 /* hero-title */
 .hero {
   background: #2e2f42;
+  padding: 188px 472px 292px 472px;
+  margin-bottom: 0;
 }
 .hero-title {
   color: var(--WHITE, #fff);
