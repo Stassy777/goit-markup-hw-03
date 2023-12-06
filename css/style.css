@@ -18,6 +18,13 @@ h6,
 p {
   margin: 0;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -30,7 +37,9 @@ p {
 }
 
 .header {
-  border-top: 1px;
+  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 /* logo
  */
@@ -55,11 +64,7 @@ p {
   line-height: 1.17;
   text-decoration: none;
 }
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+
 /* Button */
 .button {
   color: var(--WHITE, #fff);
@@ -127,6 +132,7 @@ ul {
   font-weight: 700;
   letter-spacing: 1.12px;
   margin-bottom: 48px;
+  width: 496px;
 }
 
 /* content */
@@ -146,6 +152,7 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  width: 264px;
 }
 
 /* Our team */
@@ -187,7 +194,6 @@ ul {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-}
 
 .section-title .title {
   color: #2e2f42;
@@ -196,13 +202,17 @@ ul {
 .main-footer {
   flex-shrink: 0;
   background: var(--NAVY-BLUE, #2e2f42);
+  padding-top: 100px;
+  padding-bottom: 188px;
 }
+
 .main-footer .text {
   color: var(--CLOUD, #f4f4fd);
   font-size: 16px;
   letter-spacing: 0.32px;
   line-height: 1.5;
   margin-top: 17.5px;
+  width: 264px;
 }
 .main-footer .accent {
   color: var(--CLOUD, #f4f4fd);
@@ -211,7 +221,4 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-}
-.main-footer .container {
-  padding-top: 101.5px;
 }
