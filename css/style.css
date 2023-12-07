@@ -41,6 +41,10 @@ ul {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+.container nav {
+  display: flex;
+  align-items: center;
+}
 /* logo
  */
 .logo {
@@ -102,6 +106,7 @@ ul {
   text-decoration: none;
   display: flex;
   margin-right: 40px;
+  margin-left: 76px;
 }
 
 .nav-link:hover,
@@ -111,8 +116,16 @@ ul {
 /* contacts */
 .address {
   font-style: normal;
+  margin-left: auto;
 }
-.contacts-link {
+.contacts {
+  display: flex;
+}
+
+.contacts .items + .items {
+  margin-left: 40px;
+}
+.items .contacts-link {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
@@ -142,6 +155,13 @@ ul {
 }
 
 /* content */
+.content {
+  display: flex;
+}
+.content .item-content {
+  width: 264px;
+  margin-left: 24px;
+}
 
 .content .content-title {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -158,7 +178,7 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  width: 264px;
+  padding-top: 8px;
 }
 
 /* Our team */
@@ -173,7 +193,10 @@ ul {
   margin-bottom: 72px;
   padding-top: 120px;
 }
-
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 .team {
   background: var(--CLOUD, #f4f4fd);
   padding-top: 120px;
@@ -181,6 +204,16 @@ ul {
 }
 .item {
   background-color: #ffffff;
+  margin-right: 24px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  height: 380px;
+}
+
+.team-list .item:last-child {
+  margin-right: 0;
 }
 .team-list .title {
   color: #2e2f42;
@@ -188,21 +221,49 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  text-align: center;
+  padding-top: 32px;
 }
 .team-list .text {
   color: var(--SLATE, #434455);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  text-align: center;
+  padding-top: 8px;
 }
 /* Our Portfolio */
+.team-list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.item-portfolio {
+  width: 360px;
+  height: 420px;
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
+  background: var(--WHITE, #fff);
+  margin-bottom: 48px;
+}
+.item-portfolio:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 .portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
-.section-title .title {
+.item-portfolio .title {
   color: #2e2f42;
+  padding-top: 32px;
+  letter-spacing: 0.4px;
+  padding-left: 16px;
+}
+.item-portfolio .text {
+  padding-top: 8px;
+  letter-spacing: 0.4px;
+  padding-left: 16px;
 }
 /* Footer */
 .main-footer {
