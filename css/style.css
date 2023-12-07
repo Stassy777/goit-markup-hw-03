@@ -166,22 +166,37 @@ img {
   letter-spacing: 1.12px;
   margin-bottom: 48px;
   max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* content */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .content {
   display: flex;
 }
 .content .item-content {
   width: 264px;
   margin-left: 24px;
+  gap: 24px;
+  width: calc((100% - 72px) / 4);
 }
 
 .content .content-title {
   color: var(--NAVY-BLUE, #2e2f42);
-
+  margin-bottom: 8px;
   font-size: 20px;
-
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
@@ -225,6 +240,11 @@ img {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   height: 380px;
 }
+.card-text {
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 .team-list .item:last-child {
   margin-right: 0;
@@ -235,8 +255,7 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
-  text-align: center;
-  padding-top: 32px;
+  margin-bottom: 8px;
 }
 .team-list .text {
   color: var(--SLATE, #434455);
@@ -244,18 +263,22 @@ img {
   line-height: 1.5;
   letter-spacing: 0.32px;
   text-align: center;
-  padding-top: 8px;
 }
 /* Our Portfolio */
+.portfolio-card {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
 .team-list-portfolio {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  column-gap: 24px;
 }
 .item-portfolio {
   width: 360px;
   height: 420px;
-  border: 1px solid var(--CORNFLOWER, #e7e9fc);
   background: var(--WHITE, #fff);
   margin-bottom: 48px;
 }
@@ -272,27 +295,27 @@ img {
   color: #2e2f42;
   padding-top: 32px;
   letter-spacing: 0.4px;
-  padding-left: 16px;
+  margin-bottom: 8px;
 }
 .item-portfolio .text {
-  padding-top: 8px;
   letter-spacing: 0.4px;
-  padding-left: 16px;
 }
 /* Footer */
 .main-footer {
   flex-shrink: 0;
   background: var(--NAVY-BLUE, #2e2f42);
   padding-top: 100px;
-  padding-bottom: 188px;
+  padding-bottom: 100px;
 }
-
+.main-footer .logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
 .main-footer .text {
   color: var(--CLOUD, #f4f4fd);
   font-size: 16px;
   letter-spacing: 0.32px;
   line-height: 1.5;
-  margin-top: 17.5px;
   width: 264px;
 }
 .main-footer .accent {
