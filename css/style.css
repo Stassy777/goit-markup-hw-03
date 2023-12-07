@@ -89,15 +89,21 @@ ul {
 }
 
 /* navigation */
+.nav {
+  display: flex;
+}
 
-.nav-link {
+.nav .nav-link {
   color: var(--NAVY-BLUE, #2e2f42);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
   text-decoration: none;
+  display: flex;
+  margin-right: 40px;
 }
+
 .nav-link:hover,
 .nav-link:focus {
   color: var(--OCEAN, #404bbf);
