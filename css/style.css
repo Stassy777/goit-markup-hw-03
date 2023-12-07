@@ -104,6 +104,7 @@ img {
 /* navigation */
 .nav {
   display: flex;
+  gap: 40px;
 }
 
 .nav .nav-link {
@@ -185,12 +186,12 @@ img {
 }
 .content {
   display: flex;
+  gap: 24px;
 }
 .content .item-content {
   width: 264px;
   margin-left: 24px;
-  gap: 24px;
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .content .content-title {
