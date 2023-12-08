@@ -189,14 +189,7 @@ img {
   gap: 24px;
 }
 .content .item-content {
-  margin-left: 24px;
   width: calc((100% - 72px) / 4);
-}
-.content .item-content:first-child {
-  margin-left: 0;
-}
-.content .item-content:last-child {
-  margin-right: 0;
 }
 
 .content .content-title {
