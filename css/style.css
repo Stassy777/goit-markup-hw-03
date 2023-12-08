@@ -193,6 +193,9 @@ img {
   margin-left: 24px;
   width: calc((100% - 72px) / 4);
 }
+.content .item-content:last-child {
+  margin-right: 0;
+}
 
 .content .content-title {
   color: var(--NAVY-BLUE, #2e2f42);
