@@ -42,13 +42,10 @@ img {
 
 .header {
   border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .container nav {
   display: flex;
   align-items: center;
-  gap: 40px;
 }
 /* logo
  */
@@ -115,8 +112,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.32px;
   text-decoration: none;
-  display: flex;
-  margin-right: 40px;
+  display: block;
   padding: 24px 0;
 }
 
@@ -128,18 +124,14 @@ img {
 .address {
   font-style: normal;
   margin-left: auto;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .contacts {
   display: flex;
   gap: 40px;
 }
 
-.contacts .items + .items {
-  margin-left: 40px;
-}
 .items .contacts-link {
+  display: block;
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
@@ -209,7 +201,6 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  padding-top: 8px;
 }
 
 /* Our team */
@@ -222,7 +213,6 @@ img {
   text-transform: capitalize;
   text-align: center;
   margin-bottom: 72px;
-  padding-top: 120px;
 }
 .team-list {
   display: flex;
@@ -240,7 +230,7 @@ img {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  height: 380px;
+  width: calc((100% - 3 * 24px) / 4);
 }
 .card-text {
   text-align: center;
@@ -295,9 +285,9 @@ img {
 
 .item-portfolio .title {
   color: #2e2f42;
-  padding-top: 32px;
   letter-spacing: 0.4px;
   margin-bottom: 8px;
+  font-weight: 500;
 }
 .item-portfolio .text {
   letter-spacing: 0.4px;
@@ -312,6 +302,7 @@ img {
 .main-footer .logo {
   display: inline-block;
   margin-bottom: 16px;
+  margin-right: 0;
 }
 .main-footer .text {
   color: var(--CLOUD, #f4f4fd);
